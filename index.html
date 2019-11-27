@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>House Designer</title>
+    <script src="libraries/p5.js" type="text/javascript"></script>
+    <script src="libraries/p5.dom.js" type="text/javascript"></script>
+    <script src="libraries/p5.sound.js" type="text/javascript"></script>
+    <script language="javascript" type="text/javascript" src="libraries/aframe.min.js"></script>
+		<script language="javascript" type="text/javascript" src="libraries/aframep5.js"></script>
+
+    <script src="sketch_2d.js" type="text/javascript"></script>
+    <script src="sketch_3d.js" type="text/javascript"></script>
+
+    <style> body {padding: 0; margin: 0;} canvas {vertical-align: top;}
+            #twoD {float:left; overflow:hidden;}  #threeD {float:left; width:500px; height:500px; overflow:hidden;}
+
+
+    </style>
+  </head>
+
+  <body>
+      <div id='twoD'></div>
+      <div id='threeD'>
+        <a-scene id="VRScene">
+				  <a-assets id="VRAssets">
+				    <img src="images/sky.jpg" id="sky"></a-assets>
+            <img src="images/texture/floor1.jpg" id="floor1"></a-assets>
+            <img src="images/texture/floor2.jpg" id="floor2"></a-assets>
+            <img src="images/texture/floor3.jpg" id="floor3"></a-assets>
+            <img src="images/texture/floor4.jpg" id="floor4"></a-assets>
+            <img src="images/texture/wallpaper1.jpg" id="wallpaper1"></a-assets>
+            <img src="images/texture/wallpaper2.jpg" id="wallpaper2"></a-assets>
+            <img src="images/texture/wallpaper3.jpg" id="wallpaper3"></a-assets>
+            <img src="images/texture/wallpaper4.jpg" id="wallpaper4"></a-assets>
+            <a-asset id="chair1" src="images/chair1.dae"></a-asset>
+            <a-asset id="chair2" src="images/chair2.dae"></a-asset>
+            <a-asset id="desk" src="images/desk.dae"></a-asset>
+            <a-asset id="door" src="images/door.dae"></a-asset>
+            <a-asset id="fridge" src="images/fridge.dae"></a-asset>
+            <a-asset id="lamp" src="images/lamp.dae"></a-asset>
+            <a-asset id="sofa1" src="images/sofa1.dae"></a-asset>
+            <a-asset id="sofa2" src="images/sofa2.dae"></a-asset>
+            <a-asset id="table1" src="images/table1.dae"></a-asset>
+            <a-asset id="table2" src="images/table2.dae"></a-asset>
+            <a-asset id="tv" src="images/tv.dae"></a-asset>
+				  </a-assets>
+				  <a-sky id="theSky" src="sky" color="rgb(255,255,255)"></a-sky>
+	      </a-scene>
+      </div>
+
+  </body>
+</html>
